@@ -1,0 +1,366 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>大数据解决方案</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="keywords" content="{ms:global.keyword/}" /> -->
+		<!-- <meta name="description" content="{ms:global.descrip/}" /> -->
+		<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./css/cy_style.css">
+		<script src="./js/device_adapter.js"></script>
+		<script src="./js/jquery-3.3.1.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<header class="home-header">
+				<div class="home-logo">
+					<a href="{ms:global.url/}" class="logo-box">
+						<img src="./image/home_logo_white.png" alt="" class="logo">
+					</a>
+					<span>人工智能·创造无限</span>
+				</div>
+				<span class="home-nav-menu" @click="showMenu()"></span>
+			</header>
+			<div class="info-main">
+				<div class="banner"></div>
+				<div class="info-banner">
+					<p class="banner-title">OFD办公文档软件</p>
+				</div>
+				<div class="info-product">
+					<h3 class="section-title">产品简介</h3>
+					<div class="description">
+						畅云OFD文档办公软件提供格式转换及版式文档阅读服务，实现将主流的文件格式转换为OFD格式文件，支持OFD电子文件的阅读浏览、全文检索、文档打印等功能。该系统可以封装为多种形态提供调用，如标准HTTP服务、网络服务(WebService)，支持C++、Java和C#等多种调用方式。
+					</div>
+				</div>
+				<div class="common-product-img" style="background-image: url(./image/ofd-demo.png);"></div>
+				<div class="ofd-introduction">
+					<h3 class="title">背景介绍</h3>
+					<div class="content-wrapper">
+						<img src="./image/procen-ofdback01.png" alt="" class="ofd-img">
+						<p class="text">国家主导标准</p>
+						<p class="description">
+							OFD标准由国家主管部门牵头制定的、公开、公正、自主可控的电子文件格式标准，摆脱了国外技术标准的依赖，对我国信息资源安全有着标志性的意义。
+						</p>
+					</div>
+					<div class="content-wrapper">
+						<img src="./image/procen-ofdback02.png" alt="" class="ofd-img">
+						<p class="text">基于国家信息安全考虑</p>
+						<p class="description">
+							PDF不支持SM2国密算法，在实际应用中不可能全面符合国家保密要求。OFD支持国产密码算法，遵循国家标准，技术自主可控，具有较高的社会认可度与行业支持性。
+						</p>
+					</div>
+					<div class="content-wrapper">
+						<img src="./image/procen-ofdback03.png" alt="" class="ofd-img">
+						<p class="text">打破PDF垄断市场</p>
+						<p class="description">
+							OFD标准的制定就是为了打破PDF在版式技术上的垄断，在关系国家信息安全的核心领域，实现自主可控。
+						</p>
+					</div>
+				</div>
+				<div class="info-advantage ofd-advantage">
+					<h3 class="title">产品优势</h3>
+					<div class="content-wrapper">
+						<img src="./image/procen-ciasadv05.png" alt="" class="img">
+						<div class="content">
+							<h4>转换精度高</h4>
+							<p class="description">真实的保持原有文档中文字、图表、公式、色彩等版式信息。</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<img src="./image/procen-ciasadv06.png" alt="" class="img">
+						<div class="content">
+							<h4>转换效率快</h4>
+							<p class="description">通过并行计算和自动负载均衡设计，可以应对TB级存量文档的高速转换需求。</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<img src="./image/procen-ciasadv07.png" alt="" class="img">
+						<div class="content">
+							<h4>跨平台阅读</h4>
+							<p class="description">支持各种操作系统平台、各类浏览器，阅读内容以标准的HTML格式返回给用户端浏览器。</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<img src="./image/procen-ciasadv08.png" alt="" class="img">
+						<div class="content">
+							<h4>100%符合国家标准</h4>
+							<p class="description">
+								软件存储格式使用国家版式文档标准 OFD，元数据符合《DA/T 46-2009 文书类电子文件元数据方案》标准。
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="info-feature ofd-feature">
+					<h3 class="title">产品功能</h3>
+					<div class="content-wrapper">
+						<div class="feature-img" style="background-image: url(./image/procen-ciafunpic05.png);">
+						</div>
+						<div class="content">
+							<h4>格式转换</h4>
+							<p>具备主流文档转换为OFD版式的功能，包括但不限于Office办公文档、WPS、PDF、XPS、图片、RTF、HTML网页等。</p>
+							<p>支持直接从扫描仪创建OFD文件，提供OCR识别功能，可直接生成双层OFD文件。</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="feature-img" style="background-image: url(./image/procen-ciafunpic06.png);">
+						</div>
+						<div class="content">
+							<h4>阅读查看</h4>
+							<p>支持OFD/PDF文件的打开、保存、另存、打印和查看元数据。</p>
+							<p>可将打开的OFD文件导出成PDF、纯文本、图片序列或多页TIFF。</p>
+							<p>支持翻页、缩放、导览等多种显示模式。</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="feature-img" style="background-image: url(./image/procen-ciafunpic07.png);">
+						</div>
+						<div class="content">
+							<h4>检索加工</h4>
+							<p>支持全文查找和多文档检索关键词功能。</p>
+							<p>提供手写签批和电子印章功能，可向文档中添加基于数字签名机制的手写签批和电子印章。</p>
+							<p>支持文档加密/解密、拆分/合并等操作。</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="feature-img" style="background-image: url(./image/procen-ciafunpic08.png);">
+						</div>
+						<div class="content">
+							<h4>文件注释</h4>
+							<p>支持在页面中添加箭头、直线、矩形、圆、自由曲线等简单图形注释。</p>
+							<p>支持添加橡皮图章注释。</p>
+							<p>支持添加文本、图形、图像的组合背景或者水印。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="home-footer">
+	<p class="telephone">客服电话&nbsp;&nbsp;400-0808-939</p>
+	<p class="copyright">Copyright &copy; 畅云时讯 2019</p>
+</footer>
+			<transition enter-active-class="fade-in-active" leave-active-class="fade-out-active">
+				<div v-show="menuExpand" class="menu-bg" v-cloak @click.stop="closeMenu()"></div>
+			</transition>
+			<transition name="slide-in">
+				<ul v-show="menuExpand" class="menu-content" v-cloak>
+					<li v-for="(item, index) in menuList" :key="item.title" class="level">
+						<div class="title" :class="{'has-border': item.children.length > 0}"
+							@click="handleExpand(1, index, 0, item)">
+							<span v-cloak class="title-text">{{item.title}}</span>
+							<template v-if="item.children.length > 0">
+								<span v-if="item.expanded" class="title-icon">-</span>
+								<span v-else="item.expanded" class="title-icon">+</span>
+							</template>
+						</div>
+						<ul v-if="item.children.length > 0" class="sub-content" :class="{'active': item.expanded}">
+							<li v-for="(subItem, subIndex) in item.children" :key="subItem.title" class="level">
+								<div class="title" :class="{'has-border': subItem.children.length > 0}"
+									@click="handleExpand(2, index, subIndex, subItem)">
+									<span class="title-text">{{subItem.title}}</span>
+									<template v-if="subItem.children.length > 0">
+										<span v-if="subItem.expanded" class="title-icon">-</span>
+										<span v-else="subItem.expanded" class="title-icon">+</span>
+									</template>
+								</div>
+								<ul class="sub-level" :class="{'active': subItem.expanded}">
+									<li v-for="(thirdItem, thirdIndex) in subItem.children" :key="thirdItem.title" class="title"
+										@click="goRoute(thirdItem)">
+										<span class="title-text">{{thirdItem.title}}</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</transition>
+		</div>
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+					menuExpand: false,
+					menuList: [
+						{
+							title: '首页',
+							level: 1,
+							index: 0,
+							expanded: false,
+							url: '/',
+							children: []
+						}, {
+							title: '产品中心',
+							level: 1,
+							index: 1,
+							expanded: false,
+							children: [
+								{
+									title: '人工智能产品',
+									level: 2,
+									index: 0,
+									expanded: false,
+									children: [
+										{
+											title: '人脸识别',
+											url: 'face.html'
+										}, {
+											title: '图像文字识别',
+											url: 'images.html'
+										}, {
+											title: '智能交互机器人',
+											url: 'robot.html'
+										}
+									]
+								}, {
+									title: '通用产品',
+									level: 2,
+									index: 1,
+									expanded: false,
+									children: [
+										{
+											title: '竞争情报分析系统',
+											url: 'infoanalysis.html'
+										}, {
+											title: 'OFD文档办公软件',
+											url: 'ofd.html'
+										}, {
+											title: 'DIU文档智能利用平台',
+											url: 'diu.html'
+										}, {
+											title: 'eSearch智能检索',
+											url: 'eSearch.html'
+										}
+									]
+								}
+							]
+						}, {
+							title: '解决方案',
+							level: 1,
+							index: 2,
+							expanded: false,
+							children: [
+								{
+									title: '大数据解决方案',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'bigdata.html',
+									children: []
+								}, {
+									title: '人工智能解决方案',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'ai.html',
+									children: []
+								}
+							]
+						}, {
+							title: '联合实验室',
+							level: 1,
+							index: 3,
+							expanded: false,
+							url: 'lab.html',
+							children: []
+						}, {
+							title: '新闻动态',
+							level: 1,
+							index: 4,
+							expanded: false,
+							url: '/4/index.html',
+							children: []
+						}, {
+							title: '关于我们',
+							level: 1,
+							index: 5,
+							expanded: false,
+							children: [
+								{
+									title: '公司介绍',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'aboutus.html',
+									children: []
+								}, {
+									title: '联系我们',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'contactus.html',
+									children: []
+								}, {
+									title: '加入我们',
+									level: 2,
+									index: 2,
+									expanded: false,
+									url: 'joinus.html',
+									children: []
+								}
+							]
+						}
+					]
+				},
+				methods: {
+					showMenu() {
+						this.menuExpand = !this.menuExpand
+						document.documentElement.style.overflow = 'hidden'
+						document.body.style.overflow = 'hidden'
+						document.body.style.position = 'fixed'
+					},
+					closeMenu() {
+						this.menuExpand = false
+						document.documentElement.style.overflow = 'auto'
+						document.body.style.overflow = 'auto'
+						document.body.style.position = 'static'
+					},
+					handleExpand(level, index, subIndex, item) {
+						if (level === 1 && item.children.length > 0) {
+							this.handleTopLevel(index, item)
+						} else if (level === 2 && item.children.length > 0) {
+							this.handleSubLevel(index, subIndex, item)
+						} else {
+							this.goRoute(item)
+						}
+					},
+					handleTopLevel(index, item) {
+						if (!item.expanded) {
+							this.foldTopLevel()
+						}
+						this.menuList[index].expanded = !this.menuList[index].expanded
+						this.$set(this.menuList, index, this.menuList[index])
+					},
+					handleSubLevel(index, subIndex, item) {
+						if (!item.expanded) {
+							this.foldSubLevel(index)
+						}
+						this.menuList[index].children[subIndex].expanded = !this.menuList[index].children[subIndex].expanded
+						this.$set(this.menuList[index], subIndex, this.menuList[index].children[subIndex])
+					},
+					goRoute(item) {
+						window.location.href = '{ms:global.url/}' + item.url
+					},
+					foldTopLevel() {
+						for (var m = 0; m < this.menuList.length; m++) {
+							this.menuList[m].expanded = false
+							for (var i = 0; i < this.menuList[m].children.length; i++) {
+								this.menuList[m].children[i].expanded = false
+								this.$set(this.menuList[m].children, i, this.menuList[m].children[i])
+							}
+							this.$set(this.menuList, m, this.menuList[m])
+						}
+					},
+					foldSubLevel(index) {
+						for (var n = 0; n < this.menuList[index].children.length; n++) {
+							this.menuList[index].children[n].expanded = false
+							this.$set(this.menuList[index].children, n, this.menuList[index].children[n])
+						}
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>

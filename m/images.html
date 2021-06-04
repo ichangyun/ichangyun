@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>大数据解决方案</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="keywords" content="{ms:global.keyword/}" /> -->
+		<!-- <meta name="description" content="{ms:global.descrip/}" /> -->
+		<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./css/cy_style.css">
+		<script src="./js/device_adapter.js"></script>
+		<script src="./js/jquery-3.3.1.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<header class="home-header">
+				<div class="home-logo">
+					<a href="{ms:global.url/}" class="logo-box">
+						<img src="./image/home_logo_white.png" alt="" class="logo">
+					</a>
+					<span>人工智能·创造无限</span>
+				</div>
+				<span class="home-nav-menu" @click="showMenu()"></span>
+			</header>
+			<div class="face-main">
+				<div class="banner"></div>
+				<div class="ai-common-banner">
+					<p class="banner-title">图像文字识别</p>
+					<p class="banner-description">
+						提供多种场景下精准的图像文字识别技术服务，包括卡片证件照识别、网络图片文字识别、标准文件模板识别等，让您的应用看图识字，提升输入效率，优化用户体验 。
+					</p>
+				</div>
+				<div class="face-product image-product">
+					<h3 class="title">产品功能</h3>
+					<div class="content-wrapper image-content-wrapper">
+						<div class="img-bg image-id"></div>
+						<div class="content-info image-content-info">
+							<p class="content-title">身份证识别</p>
+							<p class="description">支持对二代居民身份证正反面的关键字段识别，包括姓名、性别、民族、出生日期、住址、身份证号、签发机关、有效期限，识别准确率可达98%以上。</p>
+						</div>
+					</div>
+					<div class="content-wrapper image-content-wrapper">
+						<div class="img-bg image-license"></div>
+						<div class="content-info image-content-info">
+							<p class="content-title">驾驶证识别</p>
+							<p class="description">支持对机动车驾驶证正页的关键字段识别，包括证号、姓名、性别、国籍、住址、出生日期、初次领证日期、准驾车型、有效期限。</p>
+						</div>
+					</div>
+					<div class="content-wrapper image-content-wrapper">
+						<div class="img-bg image-picture"></div>
+						<div class="content-info image-content-info">
+							<p class="content-title">标准文件图形识别</p>
+							<p class="description">支持识别标准文件信息，并对标准信息要素进行抽取分析，支持信息的修正及检索，帮助您快速便捷地完成文件的电子化。</p>
+						</div>
+					</div>
+					<div class="content-wrapper image-content-wrapper">
+						<div class="img-bg image-text"></div>
+						<div class="content-info image-content-info">
+							<p class="content-title">图片文字识别</p>
+							<p class="description">能够快速准确识别各种网络图片中的文字，在复杂字体和复杂背景的情况下仍能保持非常高的识别准确率。</p>
+						</div>
+					</div>
+				</div>
+				<div class="face-scene">
+					<h3 class="title">推荐场景</h3>
+					<div class="content-wrapper">
+						<div class="content-bg" style="background-image: url(./image/procen-recsce05.png);">
+						</div>
+						<div class="content-cover"></div>
+						<div class="content">
+							<h4>【纸质文档票据电子化】</h4>
+							<div class="description">
+								<p>实现纸质文档资料、票据、表格的自动识别和录入，减少人工录入成本，提高输入效率。</p>
+							</div>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="content-bg" style="background-image: url(./image/procen-recsce06.png);">
+						</div>
+						<div class="content-cover"></div>
+						<div class="content">
+							<h4>【自助办理业务】</h4>
+							<div class="description">
+								<p>
+									适用于在自助办理业务时，对提交的文件资料、证件等进行自动化采集，减少手工书写过程，能大大提高工作效率与准确性。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="content-bg" style="background-image: url(./image/procen-recsce07.png);">
+						</div>
+						<div class="content-cover"></div>
+						<div class="content">
+							<h4>【内容审核与监管】</h4>
+							<div class="description">
+								<p>
+									自动识别图片、视频中的文字内容，及时发现涉黄、涉暴、政治敏感、恶意广告等不合规内容，规避业务风险，大幅节约人工审核成本。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="face-type">
+					<h4>服务类型</h4>
+					<div class="content-wrapper">
+						<div class="img-box" style="background-image: url(./image/cloud03.png);">
+						</div>
+						<p class="title">云端服务</p>
+						<p class="description">
+							提供各类文字识别的云端服务接口，用户可以通过直接调用API或使用SDK对图片中的文字进行识别。
+						</p>
+					</div>
+					<div class="content-wrapper">
+						<div class="img-box" style="background-image: url(./image/collection03.png);">
+						</div>
+						<p class="title">离线采集SDK</p>
+						<p class="description">
+							集成到设备中，无需网络即可实现文字识别、银行卡扫描识别、身份证质量检测及扫描识别等功能。
+						</p>
+					</div>
+					<div class="content-wrapper">
+						<div class="img-box" style="background-image: url(./image/deploy03.png);">
+						</div>
+						<p class="title">私有化部署</p>
+						<p class="description">
+							部署至客户本地服务器，在客户内网中实现文字识别功能，保障数据私密性。提供一体机和软件部署包两种私有化方案。
+						</p>
+					</div>
+				</div>
+			</div>
+			<footer class="home-footer">
+	<p class="telephone">客服电话&nbsp;&nbsp;400-0808-939</p>
+	<p class="copyright">Copyright &copy; 畅云时讯 2019</p>
+</footer>
+			<transition enter-active-class="fade-in-active" leave-active-class="fade-out-active">
+				<div v-show="menuExpand" class="menu-bg" v-cloak @click.stop="closeMenu()"></div>
+			</transition>
+			<transition name="slide-in">
+				<ul v-show="menuExpand" class="menu-content" v-cloak>
+					<li v-for="(item, index) in menuList" :key="item.title" class="level">
+						<div class="title" :class="{'has-border': item.children.length > 0}"
+							@click="handleExpand(1, index, 0, item)">
+							<span v-cloak class="title-text">{{item.title}}</span>
+							<template v-if="item.children.length > 0">
+								<span v-if="item.expanded" class="title-icon">-</span>
+								<span v-else="item.expanded" class="title-icon">+</span>
+							</template>
+						</div>
+						<ul v-if="item.children.length > 0" class="sub-content" :class="{'active': item.expanded}">
+							<li v-for="(subItem, subIndex) in item.children" :key="subItem.title" class="level">
+								<div class="title" :class="{'has-border': subItem.children.length > 0}"
+									@click="handleExpand(2, index, subIndex, subItem)">
+									<span class="title-text">{{subItem.title}}</span>
+									<template v-if="subItem.children.length > 0">
+										<span v-if="subItem.expanded" class="title-icon">-</span>
+										<span v-else="subItem.expanded" class="title-icon">+</span>
+									</template>
+								</div>
+								<ul class="sub-level" :class="{'active': subItem.expanded}">
+									<li v-for="(thirdItem, thirdIndex) in subItem.children" :key="thirdItem.title" class="title"
+										@click="goRoute(thirdItem)">
+										<span class="title-text">{{thirdItem.title}}</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</transition>
+		</div>
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+					menuExpand: false,
+					menuList: [
+						{
+							title: '首页',
+							level: 1,
+							index: 0,
+							expanded: false,
+							url: '/',
+							children: []
+						}, {
+							title: '产品中心',
+							level: 1,
+							index: 1,
+							expanded: false,
+							children: [
+								{
+									title: '人工智能产品',
+									level: 2,
+									index: 0,
+									expanded: false,
+									children: [
+										{
+											title: '人脸识别',
+											url: 'face.html'
+										}, {
+											title: '图像文字识别',
+											url: 'images.html'
+										}, {
+											title: '智能交互机器人',
+											url: 'robot.html'
+										}
+									]
+								}, {
+									title: '通用产品',
+									level: 2,
+									index: 1,
+									expanded: false,
+									children: [
+										{
+											title: '竞争情报分析系统',
+											url: 'infoanalysis.html'
+										}, {
+											title: 'OFD文档办公软件',
+											url: 'ofd.html'
+										}, {
+											title: 'DIU文档智能利用平台',
+											url: 'diu.html'
+										}, {
+											title: 'eSearch智能检索',
+											url: 'eSearch.html'
+										}
+									]
+								}
+							]
+						}, {
+							title: '解决方案',
+							level: 1,
+							index: 2,
+							expanded: false,
+							children: [
+								{
+									title: '大数据解决方案',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'bigdata.html',
+									children: []
+								}, {
+									title: '人工智能解决方案',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'ai.html',
+									children: []
+								}
+							]
+						}, {
+							title: '联合实验室',
+							level: 1,
+							index: 3,
+							expanded: false,
+							url: 'lab.html',
+							children: []
+						}, {
+							title: '新闻动态',
+							level: 1,
+							index: 4,
+							expanded: false,
+							url: '/4/index.html',
+							children: []
+						}, {
+							title: '关于我们',
+							level: 1,
+							index: 5,
+							expanded: false,
+							children: [
+								{
+									title: '公司介绍',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'aboutus.html',
+									children: []
+								}, {
+									title: '联系我们',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'contactus.html',
+									children: []
+								}, {
+									title: '加入我们',
+									level: 2,
+									index: 2,
+									expanded: false,
+									url: 'joinus.html',
+									children: []
+								}
+							]
+						}
+					]
+				},
+				methods: {
+					showMenu() {
+						this.menuExpand = !this.menuExpand
+						document.documentElement.style.overflow = 'hidden'
+						document.body.style.overflow = 'hidden'
+						document.body.style.position = 'fixed'
+					},
+					closeMenu() {
+						this.menuExpand = false
+						document.documentElement.style.overflow = 'auto'
+						document.body.style.overflow = 'auto'
+						document.body.style.position = 'static'
+					},
+					handleExpand(level, index, subIndex, item) {
+						if (level === 1 && item.children.length > 0) {
+							this.handleTopLevel(index, item)
+						} else if (level === 2 && item.children.length > 0) {
+							this.handleSubLevel(index, subIndex, item)
+						} else {
+							this.goRoute(item)
+						}
+					},
+					handleTopLevel(index, item) {
+						if (!item.expanded) {
+							this.foldTopLevel()
+						}
+						this.menuList[index].expanded = !this.menuList[index].expanded
+						this.$set(this.menuList, index, this.menuList[index])
+					},
+					handleSubLevel(index, subIndex, item) {
+						if (!item.expanded) {
+							this.foldSubLevel(index)
+						}
+						this.menuList[index].children[subIndex].expanded = !this.menuList[index].children[subIndex].expanded
+						this.$set(this.menuList[index], subIndex, this.menuList[index].children[subIndex])
+					},
+					goRoute(item) {
+						window.location.href = '{ms:global.url/}' + item.url
+					},
+					foldTopLevel() {
+						for (var m = 0; m < this.menuList.length; m++) {
+							this.menuList[m].expanded = false
+							for (var i = 0; i < this.menuList[m].children.length; i++) {
+								this.menuList[m].children[i].expanded = false
+								this.$set(this.menuList[m].children, i, this.menuList[m].children[i])
+							}
+							this.$set(this.menuList, m, this.menuList[m])
+						}
+					},
+					foldSubLevel(index) {
+						for (var n = 0; n < this.menuList[index].children.length; n++) {
+							this.menuList[index].children[n].expanded = false
+							this.$set(this.menuList[index].children, n, this.menuList[index].children[n])
+						}
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>

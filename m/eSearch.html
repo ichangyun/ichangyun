@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>大数据解决方案</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="keywords" content="{ms:global.keyword/}" /> -->
+		<!-- <meta name="description" content="{ms:global.descrip/}" /> -->
+		<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./css/cy_style.css">
+		<script src="./js/device_adapter.js"></script>
+		<script src="./js/jquery-3.3.1.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<header class="home-header">
+				<div class="home-logo">
+					<a href="{ms:global.url/}" class="logo-box">
+						<img src="./image/home_logo_white.png" alt="" class="logo">
+					</a>
+					<span>人工智能·创造无限</span>
+				</div>
+				<span class="home-nav-menu" @click="showMenu()"></span>
+			</header>
+			<div class="info-main face-main">
+				<div class="banner"></div>
+				<div class="info-banner">
+					<p class="banner-title">eSearch智能检索</p>
+				</div>
+				<div class="info-product">
+					<h3 class="section-title">产品简介</h3>
+					<div class="description">
+						eSearch智能检索为用户提供快速精准的检索服务，支持对文本、图片、视频等格式文件进行检索，同时对检索内容进行关联发现，实现知识价值的最大化利用。
+					</div>
+				</div>
+				<div class="common-product-img" style="background-image: url(./image/eSearch-demo.png);"></div>
+				<div class="info-advantage ofd-advantage esearch-advantage">
+					<h3 class="title">产品优势</h3>
+					<div class="content-wrapper">
+						<img src="./image/procen-ciasadv09.png" alt="" class="img">
+						<div class="content">
+							<h4>查询速度快</h4>
+							<p class="description">
+								比传统的关系型数据库查询速度提高几十倍；单节点，100并发，千万级数据记录下搜索速度达到秒级。
+							</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<img src="./image/procen-ciasadv10.png" alt="" class="img">
+						<div class="content">
+							<h4>搜索业务多</h4>
+							<p class="description">
+								支持全文搜索、统一搜索、条件搜索、分类聚合、条件过滤、带权限搜索以及搜索结果排序、去重、摘要、高亮、搜索词提示等搜索业务。
+							</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<img src="./image/procen-ciasadv11.png" alt="" class="img">
+						<div class="content">
+							<h4>自定义分词</h4>
+							<p class="description">
+								支持索引分词的自定义与优化，支持为任意元数据库任意字段指定索引策略与分词方式。
+							</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<img src="./image/procen-ciasadv12.png" alt="" class="img">
+						<div class="content">
+							<h4>灵活性接口</h4>
+							<p class="description">
+								丰富的接口参数与灵活的搜索语句组合，使用户可以最大限度构建个性化搜索服务。
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="info-feature ofd-feature">
+					<h3 class="title">产品功能</h3>
+					<div class="content-wrapper">
+						<div class="img-icon" style="background-image: url(./image/procen-ciafunpic14.png);">
+						</div>
+						<div class="content">
+							<h4>预置分词器</h4>
+							<p>系统预置了七大类基准分词器，基本涵盖了目前中英文自然语言处理所用到的各种常规分词方法。</p>
+							<p>包括不拆分、单字分词、索引分词、词典优先、精准分词、细粒度分词、自然语言分词。</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="img-icon" style="background-image: url(./image/procen-ciafunpic15.png);">
+						</div>
+						<div class="content">
+							<h4>词表管理</h4>
+							<p>支持用户自定义词表、单个词表进行查看和编辑，能够逐条增加、删除或修改词表中的词条数据。</p>
+							<p>支持通过词表文件进行词表的创建与批量更新，并支持将词表挂载到分词器上进行分词切词。</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="img-icon" style="background-image: url(./image/procen-ciafunpic16.png);">
+						</div>
+						<div class="content">
+							<h4>接口服务</h4>
+							<p>
+								提供标准的索引管理接口与搜索应用接口，支持创建、删除、重建、更新和停止索引等功能。eSearch能够实现对大数据的搜索要求。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="home-footer">
+	<p class="telephone">客服电话&nbsp;&nbsp;400-0808-939</p>
+	<p class="copyright">Copyright &copy; 畅云时讯 2019</p>
+</footer>
+			<transition enter-active-class="fade-in-active" leave-active-class="fade-out-active">
+				<div v-show="menuExpand" class="menu-bg" v-cloak @click.stop="closeMenu()"></div>
+			</transition>
+			<transition name="slide-in">
+				<ul v-show="menuExpand" class="menu-content" v-cloak>
+					<li v-for="(item, index) in menuList" :key="item.title" class="level">
+						<div class="title" :class="{'has-border': item.children.length > 0}"
+							@click="handleExpand(1, index, 0, item)">
+							<span v-cloak class="title-text">{{item.title}}</span>
+							<template v-if="item.children.length > 0">
+								<span v-if="item.expanded" class="title-icon">-</span>
+								<span v-else="item.expanded" class="title-icon">+</span>
+							</template>
+						</div>
+						<ul v-if="item.children.length > 0" class="sub-content" :class="{'active': item.expanded}">
+							<li v-for="(subItem, subIndex) in item.children" :key="subItem.title" class="level">
+								<div class="title" :class="{'has-border': subItem.children.length > 0}"
+									@click="handleExpand(2, index, subIndex, subItem)">
+									<span class="title-text">{{subItem.title}}</span>
+									<template v-if="subItem.children.length > 0">
+										<span v-if="subItem.expanded" class="title-icon">-</span>
+										<span v-else="subItem.expanded" class="title-icon">+</span>
+									</template>
+								</div>
+								<ul class="sub-level" :class="{'active': subItem.expanded}">
+									<li v-for="(thirdItem, thirdIndex) in subItem.children" :key="thirdItem.title" class="title"
+										@click="goRoute(thirdItem)">
+										<span class="title-text">{{thirdItem.title}}</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</transition>
+		</div>
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+					menuExpand: false,
+					menuList: [
+						{
+							title: '首页',
+							level: 1,
+							index: 0,
+							expanded: false,
+							url: '/',
+							children: []
+						}, {
+							title: '产品中心',
+							level: 1,
+							index: 1,
+							expanded: false,
+							children: [
+								{
+									title: '人工智能产品',
+									level: 2,
+									index: 0,
+									expanded: false,
+									children: [
+										{
+											title: '人脸识别',
+											url: 'face.html'
+										}, {
+											title: '图像文字识别',
+											url: 'images.html'
+										}, {
+											title: '智能交互机器人',
+											url: 'robot.html'
+										}
+									]
+								}, {
+									title: '通用产品',
+									level: 2,
+									index: 1,
+									expanded: false,
+									children: [
+										{
+											title: '竞争情报分析系统',
+											url: 'infoanalysis.html'
+										}, {
+											title: 'OFD文档办公软件',
+											url: 'ofd.html'
+										}, {
+											title: 'DIU文档智能利用平台',
+											url: 'diu.html'
+										}, {
+											title: 'eSearch智能检索',
+											url: 'eSearch.html'
+										}
+									]
+								}
+							]
+						}, {
+							title: '解决方案',
+							level: 1,
+							index: 2,
+							expanded: false,
+							children: [
+								{
+									title: '大数据解决方案',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'bigdata.html',
+									children: []
+								}, {
+									title: '人工智能解决方案',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'ai.html',
+									children: []
+								}
+							]
+						}, {
+							title: '联合实验室',
+							level: 1,
+							index: 3,
+							expanded: false,
+							url: 'lab.html',
+							children: []
+						}, {
+							title: '新闻动态',
+							level: 1,
+							index: 4,
+							expanded: false,
+							url: '/4/index.html',
+							children: []
+						}, {
+							title: '关于我们',
+							level: 1,
+							index: 5,
+							expanded: false,
+							children: [
+								{
+									title: '公司介绍',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'aboutus.html',
+									children: []
+								}, {
+									title: '联系我们',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'contactus.html',
+									children: []
+								}, {
+									title: '加入我们',
+									level: 2,
+									index: 2,
+									expanded: false,
+									url: 'joinus.html',
+									children: []
+								}
+							]
+						}
+					]
+				},
+				methods: {
+					showMenu() {
+						this.menuExpand = !this.menuExpand
+						document.documentElement.style.overflow = 'hidden'
+						document.body.style.overflow = 'hidden'
+						document.body.style.position = 'fixed'
+					},
+					closeMenu() {
+						this.menuExpand = false
+						document.documentElement.style.overflow = 'auto'
+						document.body.style.overflow = 'auto'
+						document.body.style.position = 'static'
+					},
+					handleExpand(level, index, subIndex, item) {
+						if (level === 1 && item.children.length > 0) {
+							this.handleTopLevel(index, item)
+						} else if (level === 2 && item.children.length > 0) {
+							this.handleSubLevel(index, subIndex, item)
+						} else {
+							this.goRoute(item)
+						}
+					},
+					handleTopLevel(index, item) {
+						if (!item.expanded) {
+							this.foldTopLevel()
+						}
+						this.menuList[index].expanded = !this.menuList[index].expanded
+						this.$set(this.menuList, index, this.menuList[index])
+					},
+					handleSubLevel(index, subIndex, item) {
+						if (!item.expanded) {
+							this.foldSubLevel(index)
+						}
+						this.menuList[index].children[subIndex].expanded = !this.menuList[index].children[subIndex].expanded
+						this.$set(this.menuList[index], subIndex, this.menuList[index].children[subIndex])
+					},
+					goRoute(item) {
+						window.location.href = '{ms:global.url/}' + item.url
+					},
+					foldTopLevel() {
+						for (var m = 0; m < this.menuList.length; m++) {
+							this.menuList[m].expanded = false
+							for (var i = 0; i < this.menuList[m].children.length; i++) {
+								this.menuList[m].children[i].expanded = false
+								this.$set(this.menuList[m].children, i, this.menuList[m].children[i])
+							}
+							this.$set(this.menuList, m, this.menuList[m])
+						}
+					},
+					foldSubLevel(index) {
+						for (var n = 0; n < this.menuList[index].children.length; n++) {
+							this.menuList[index].children[n].expanded = false
+							this.$set(this.menuList[index].children, n, this.menuList[index].children[n])
+						}
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>

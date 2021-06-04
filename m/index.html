@@ -1,0 +1,398 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>大数据解决方案</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="keywords" content="{ms:global.keyword/}" /> -->
+		<!-- <meta name="description" content="{ms:global.descrip/}" /> -->
+		<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./css/cy_style.css">
+		<script src="./js/device_adapter.js"></script>
+		<script src="./js/jquery-3.3.1.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<header class="home-header">
+				<div class="home-logo">
+					<a href="{ms:global.url/}" class="logo-box">
+						<img src="./image/home_logo_white.png" alt="" class="logo">
+					</a>
+					<span>人工智能·创造无限</span>
+				</div>
+				<span class="home-nav-menu" @click="showMenu()"></span>
+			</header>
+			<div class="home-main">
+				<div class="home-banner">
+					<p class="banner-theme">
+						<span class="banner-title">科技引领</span>
+						<span class="banner-title right">制造未来</span>
+					</p>
+					<p class="description">国内领先的企业大数据+AI服务提供商</p>
+					<p class="description sub">致力于推动客户向智能决策方向迈进</p>
+				</div>
+				<div class="home-product-center">
+					<h3 class="title">产品中心</h3>
+					<p class="description">畅云时讯（ichangyun）使用自主研发的大数据+AI技术，打造了一条可以为客户提供专业服务的产业链。</p>
+				</div>
+				<div class="home-product">
+					<h3 class="section-title">人工智能产品</h3>
+					<div class="ai-section" @click="goLink('face.html')">
+						<div class="item-wrapper">
+							<div class="item-bg ai-face"></div>
+							<h4 class="item-title">人脸识别</h4>
+							<p>通过软硬一体的系统集成和静态、动态人脸识别技术，建立以人为中心的感知体系，实现不同商业场景中的人机互联和感知融合。</p>
+						</div>
+					</div>
+					<div class="ai-section" @click="goLink('images.html')">
+						<div class="item-wrapper">
+							<div class="item-bg ai-picture"></div>
+							<h4 class="item-title">图像文字识别</h4>
+							<p>提供多种场景下精准的图像文字识别技术服务，包括卡片证件照识别、网络图片文字识别、标准文件模板识别等，让您的应用看图识字，提升输入效率，优化用户体验。 </p>
+						</div>
+					</div>
+					<div class="ai-section" @click="goLink('robot.html')">
+						<div class="item-wrapper">
+							<div class="item-bg ai-robot"></div>
+							<h4 class="item-title">智能交互机器人</h4>
+							<p>提供多种场景下智能沟通互动的技术服务，系统将实时进行语义分析，了解客户意图，从知识库中生成最佳应答方式，跟客户进行沟通，减少人工服务成本。</p>
+						</div>
+					</div>
+				</div>
+				<div class="home-common-product">
+					<h4 class="common-product-title">通用产品</h4>
+					<a href="infoanalysis.html" class="item">
+						<span class="title">竞争情报分析系统</span>
+						<span>>></span>
+					</a>
+					<a href="ofd.html" class="item">
+						<span class="title">OFD文档办公软件</span>
+						<span>>></span>
+					</a>
+					<a href="diu.html" class="item">
+						<span class="title">DIU文档智能利用平台</span>
+						<span>>></span>
+					</a>
+					<a href="eSearch.html" class="item">
+						<span class="title">eSearch智能检索</span>
+						<span>>></span>
+					</a>
+				</div>
+				<div class="home-solution">
+					<h3 class="title">解决方案</h3>
+					<h5 class="title-description">根据不同场景和需求，提供从行业专业咨询到应用开发落地全流程服务。</h5>
+					<div class="item solution-big-data" @click="goLink('bigdata.html')">
+						<img src="./image/home-bdlogo.png" alt="" class="img">
+						<div class="item-text">
+							<p class="item-title">大数据解决方案</p>
+							<p class="sub-title">Big data solution</p>
+							<p class="desc">大数据解决方案以满足客户需求为导向，以咨询规划、数据服务、平台建设、项目交付等不同形式，向各企事业单位提供大数据应用产品和服务。</p>
+						</div>
+					</div>
+					<div class="item solution-ai" @click="goLink('ai.html')">
+						<img src="./image/home-ailogo.png" alt="" class="img">
+						<div class="item-text">
+							<p class="item-title">人工智能据解决方案</p>
+							<p class="sub-title">Artificial intelligence solution</p>
+							<p class="desc">专注于自然语言处理、图像技术、信息检索等应用方案的研究和开发，为行业客户提供有竞争力的人工智能解决方案，帮助企业实现智能升级。</p>
+						</div>
+					</div>
+				</div>
+				<div class="home-client">
+					<h3 class="title">我们的客户</h3>
+					<h5 class="title-description">在大数据+AI服务探索中，我们与他们一起协力同行，用新技术创造不可估量的价值！</h5>
+					<ul class="content-wrapper">
+						{ms:arclist typeid=22 size=20 order=asc orderby=date}
+						<li class="item" style="background-image: url([field.litpic/]);"></li>
+						{/ms:arclist}
+					</ul>
+				</div>
+				<div class="home-client home-partner">
+					<h3 class="title">合作伙伴</h3>
+					<h5 class="title-description">有爱合作，携手共行</h5>
+					<ul class="content-wrapper">
+						{ms:arclist typeid=28 size=20 order=asc orderby=date}
+						<li class="item" style="background-image: url([field.litpic/]);"></li>
+						{/ms:arclist}
+					</ul>
+				</div>
+				<div class="home-news">
+					<h3 class="title">新闻动态</h3>
+					<h5 class="title-description">每一个新动态都是我们向前迈进的新脚步</h5>
+					<div class="tab-bar">
+						<a class="tab-item" :class="{'active': newsIndex === 0}" @click="tabClick(0)">
+							<span>公司动态</span>
+						</a>
+						<a class="tab-item" :class="{'active': newsIndex === 1}" @click="tabClick(1)">
+							<span>行业新闻</span>
+						</a>
+					</div>
+					<div class="tab-content">
+						<transition name="fade" mode="out-in">
+							<ul v-if="newsIndex === 0" key="company">
+								{ms:arclist typeid=18 size=3 noflag=c}
+								<li>
+									<a class="home-news-item" href="[field.link/]" target="_self">
+										<span class="item-title">[field.title/]</span>
+										<span class="date">[field.date fmt=yyyy-MM-dd/]</span>
+									</a>
+								</li>
+								{/ms:arclist}
+								<li>
+									<a class="more" href="news.html" target="_self">查看更多>></a>
+								</li>
+							</ul>
+							<ul v-else key="industry">
+								{ms:arclist typeid=19 size=3 noflag=c}
+								<li>
+									<a class="home-news-item" href="[field.link/]" target="_self">
+										<span class="item-title">[field.title/]</span>
+										<span class="date">[field.date fmt=yyyy-MM-dd/]</span>
+									</a>
+								</li>
+								{/ms:arclist}
+								<li>
+									<a class="more" href="news.html" target="_self">查看更多>></a>
+								</li>
+							</ul>
+						</transition>
+					</div>
+				</div>
+			</div>
+			<footer class="home-footer">
+	<p class="telephone">客服电话&nbsp;&nbsp;400-0808-939</p>
+	<p class="copyright">Copyright &copy; 畅云时讯 2019</p>
+</footer>
+			<transition enter-active-class="fade-in-active" leave-active-class="fade-out-active">
+				<div v-show="menuExpand" class="menu-bg" v-cloak @click.stop="closeMenu()"></div>
+			</transition>
+			<transition name="slide-in">
+				<ul v-show="menuExpand" class="menu-content" v-cloak>
+					<li v-for="(item, index) in menuList" :key="item.title" class="level">
+						<div class="title" :class="{'has-border': item.children.length > 0}"
+							@click="handleExpand(1, index, 0, item)">
+							<span v-cloak class="title-text">{{item.title}}</span>
+							<template v-if="item.children.length > 0">
+								<span v-if="item.expanded" class="title-icon">-</span>
+								<span v-else="item.expanded" class="title-icon">+</span>
+							</template>
+						</div>
+						<ul v-if="item.children.length > 0" class="sub-content" :class="{'active': item.expanded}">
+							<li v-for="(subItem, subIndex) in item.children" :key="subItem.title" class="level">
+								<div class="title" :class="{'has-border': subItem.children.length > 0}"
+									@click="handleExpand(2, index, subIndex, subItem)">
+									<span class="title-text">{{subItem.title}}</span>
+									<template v-if="subItem.children.length > 0">
+										<span v-if="subItem.expanded" class="title-icon">-</span>
+										<span v-else="subItem.expanded" class="title-icon">+</span>
+									</template>
+								</div>
+								<ul class="sub-level" :class="{'active': subItem.expanded}">
+									<li v-for="(thirdItem, thirdIndex) in subItem.children" :key="thirdItem.title" class="title"
+										@click="goRoute(thirdItem)">
+										<span class="title-text">{{thirdItem.title}}</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</transition>
+		</div>
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+					menuExpand: false,
+					newsIndex: 0,
+					menuList: [
+						{
+							title: '首页',
+							level: 1,
+							index: 0,
+							expanded: false,
+							url: '/',
+							children: []
+						}, {
+							title: '产品中心',
+							level: 1,
+							index: 1,
+							expanded: false,
+							children: [
+								{
+									title: '人工智能产品',
+									level: 2,
+									index: 0,
+									expanded: false,
+									children: [
+										{
+											title: '人脸识别',
+											url: 'face.html'
+										}, {
+											title: '图像文字识别',
+											url: 'images.html'
+										}, {
+											title: '智能交互机器人',
+											url: 'robot.html'
+										}
+									]
+								}, {
+									title: '通用产品',
+									level: 2,
+									index: 1,
+									expanded: false,
+									children: [
+										{
+											title: '竞争情报分析系统',
+											url: 'infoanalysis.html'
+										}, {
+											title: 'OFD文档办公软件',
+											url: 'ofd.html'
+										}, {
+											title: 'DIU文档智能利用平台',
+											url: 'diu.html'
+										}, {
+											title: 'eSearch智能检索',
+											url: 'eSearch.html'
+										}
+									]
+								}
+							]
+						}, {
+							title: '解决方案',
+							level: 1,
+							index: 2,
+							expanded: false,
+							children: [
+								{
+									title: '大数据解决方案',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'bigdata.html',
+									children: []
+								}, {
+									title: '人工智能解决方案',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'ai.html',
+									children: []
+								}
+							]
+						}, {
+							title: '联合实验室',
+							level: 1,
+							index: 3,
+							expanded: false,
+							url: 'lab.html',
+							children: []
+						}, {
+							title: '新闻动态',
+							level: 1,
+							index: 4,
+							expanded: false,
+							url: '/4/index.html',
+							children: []
+						}, {
+							title: '关于我们',
+							level: 1,
+							index: 5,
+							expanded: false,
+							children: [
+								{
+									title: '公司介绍',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'aboutus.html',
+									children: []
+								}, {
+									title: '联系我们',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'contactus.html',
+									children: []
+								}, {
+									title: '加入我们',
+									level: 2,
+									index: 2,
+									expanded: false,
+									url: 'joinus.html',
+									children: []
+								}
+							]
+						}
+					]
+				},
+				methods: {
+					showMenu() {
+						this.menuExpand = !this.menuExpand
+						document.documentElement.style.overflow = 'hidden'
+						document.body.style.overflow = 'hidden'
+						document.body.style.position = 'fixed'
+					},
+					closeMenu() {
+						this.menuExpand = false
+						document.documentElement.style.overflow = 'auto'
+						document.body.style.overflow = 'auto'
+						document.body.style.position = 'static'
+					},
+					handleExpand(level, index, subIndex, item) {
+						if (level === 1 && item.children.length > 0) {
+							this.handleTopLevel(index, item)
+						} else if (level === 2 && item.children.length > 0) {
+							this.handleSubLevel(index, subIndex, item)
+						} else {
+							this.goRoute(item)
+						}
+					},
+					handleTopLevel(index, item) {
+						if (!item.expanded) {
+							this.foldTopLevel()
+						}
+						this.menuList[index].expanded = !this.menuList[index].expanded
+						this.$set(this.menuList, index, this.menuList[index])
+					},
+					handleSubLevel(index, subIndex, item) {
+						if (!item.expanded) {
+							this.foldSubLevel(index)
+						}
+						this.menuList[index].children[subIndex].expanded = !this.menuList[index].children[subIndex].expanded
+						this.$set(this.menuList[index], subIndex, this.menuList[index].children[subIndex])
+					},
+					goRoute(item) {
+						window.location.href = '{ms:global.url/}' + item.url
+					},
+					foldTopLevel() {
+						for (var m = 0; m < this.menuList.length; m++) {
+							this.menuList[m].expanded = false
+							for (var i = 0; i < this.menuList[m].children.length; i++) {
+								this.menuList[m].children[i].expanded = false
+								this.$set(this.menuList[m].children, i, this.menuList[m].children[i])
+							}
+							this.$set(this.menuList, m, this.menuList[m])
+						}
+					},
+					foldSubLevel(index) {
+						for (var n = 0; n < this.menuList[index].children.length; n++) {
+							this.menuList[index].children[n].expanded = false
+							this.$set(this.menuList[index].children, n, this.menuList[index].children[n])
+						}
+					},
+					goLink(link) {
+						window.location.href = '{ms:global.url/}' + link
+					},
+					tabClick(index) {
+						this.newsIndex = index
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>

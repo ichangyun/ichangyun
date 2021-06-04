@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>大数据解决方案</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="keywords" content="{ms:global.keyword/}" /> -->
+		<!-- <meta name="description" content="{ms:global.descrip/}" /> -->
+		<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./css/cy_style.css">
+		<script src="./js/device_adapter.js"></script>
+		<script src="./js/jquery-3.3.1.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<header class="home-header">
+				<div class="home-logo">
+					<a href="{ms:global.url/}" class="logo-box">
+						<img src="./image/home_logo_white.png" alt="" class="logo">
+					</a>
+					<span>人工智能·创造无限</span>
+				</div>
+				<span class="home-nav-menu" @click="showMenu()"></span>
+			</header>
+			<div class="info-main">
+				<div class="banner"></div>
+				<div class="info-banner">
+					<p class="banner-title">DIU文档智能利用平台</p>
+				</div>
+				<div class="info-product">
+					<h3 class="section-title">产品简介</h3>
+					<div class="description">
+						畅云文档智能利用平台(简称DIU)专门面向单位产生的电子文档，帮助用户有序组织、精准查找、快速定位和安全获取所需文件资源，实现数据有效整合、分级共享，提供专业化的文档搜索服务和个性化的资源利用服务，提高业务工作效率的同时，也解决了用户使用文件的安全问题。
+					</div>
+				</div>
+				<div class="common-product-img" style="background-image: url(./image/diu-demo.png);"></div>
+				<div class="info-advantage diu-advantage">
+					<h3 class="title">产品优势</h3>
+					<div class="content-wrapper">
+						<img src="./image/procen-ciasadv13.png" alt="" class="img">
+						<div class="content">
+							<h4>个性化</h4>
+							<ul>
+								<li>维护个人目录及其文档</li>
+								<li>自由创建文件知识主题</li>
+								<li>系统推送你感兴趣文档</li>
+							</ul>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<img src="./image/procen-ciasadv14.png" alt="" class="img">
+						<div class="content">
+							<h4>智能化</h4>
+							<ul>
+								<li>基于内容进行语义关联</li>
+								<li>基于规则自动聚合文档</li>
+								<li>基于机器学习自动归集</li>
+							</ul>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<img src="./image/procen-ciasadv15.png" alt="" class="img">
+						<div class="content">
+							<h4>专业化</h4>
+							<ul>
+								<li>专业词表使检索更准确</li>
+								<li>多种切词满足不同需求</li>
+								<li>多层加密机制避免泄密</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="info-feature ofd-feature">
+					<h3 class="title">产品功能</h3>
+					<div class="content-wrapper">
+						<div class="img-icon" style="background-image: url(./image/procen-ciafunpic09.png);">
+						</div>
+						<div class="content">
+							<h4>上传预览</h4>
+							<p>支持所有格式的文档上传，并支持多种格式在线预览，包括office、pdf、图片、压缩包等。</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="img-icon" style="background-image: url(./image/procen-ciafunpic10.png);">
+						</div>
+						<div class="content">
+							<h4>文件权限</h4>
+							<p>
+								上传的文档支持权限设置，选择私密或公开，公开时可以设置文档公开所属的目录分类及选择可查看的部门，私密则只有自己能查看。
+							</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="img-icon" style="background-image: url(./image/procen-ciafunpic11.png);">
+						</div>
+						<div class="content">
+							<h4>精准检索</h4>
+							<p>
+								根据关键词进行全文检索，可快速的查阅到相关文件，并支持检索结果多种排序方式，按相关度、时间正序、倒序，适用于各种文件格式，包括图片，视频及其他格式化文件。
+							</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="img-icon" style="background-image: url(./image/procen-ciafunpic12.png);">
+						</div>
+						<div class="content">
+							<h4>关联推荐</h4>
+							<p>根据语义分析及统计分析，推荐与预览文件内容相关的文档。</p>
+							<p>根据用户行为，个性化、针对性地为用户推荐可能感兴趣的文档。</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="img-icon" style="background-image: url(./image/procen-ciafunpic13.png);">
+						</div>
+						<div class="content">
+							<h4>专题汇聚</h4>
+							<p>支持创建单位共享的专题文件，供所有员工学习。</p>
+							<p>支持用户自主创建文档知识主题，拥有最适合自己地文档集。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="home-footer">
+	<p class="telephone">客服电话&nbsp;&nbsp;400-0808-939</p>
+	<p class="copyright">Copyright &copy; 畅云时讯 2019</p>
+</footer>
+			<transition enter-active-class="fade-in-active" leave-active-class="fade-out-active">
+				<div v-show="menuExpand" class="menu-bg" v-cloak @click.stop="closeMenu()"></div>
+			</transition>
+			<transition name="slide-in">
+				<ul v-show="menuExpand" class="menu-content" v-cloak>
+					<li v-for="(item, index) in menuList" :key="item.title" class="level">
+						<div class="title" :class="{'has-border': item.children.length > 0}"
+							@click="handleExpand(1, index, 0, item)">
+							<span v-cloak class="title-text">{{item.title}}</span>
+							<template v-if="item.children.length > 0">
+								<span v-if="item.expanded" class="title-icon">-</span>
+								<span v-else="item.expanded" class="title-icon">+</span>
+							</template>
+						</div>
+						<ul v-if="item.children.length > 0" class="sub-content" :class="{'active': item.expanded}">
+							<li v-for="(subItem, subIndex) in item.children" :key="subItem.title" class="level">
+								<div class="title" :class="{'has-border': subItem.children.length > 0}"
+									@click="handleExpand(2, index, subIndex, subItem)">
+									<span class="title-text">{{subItem.title}}</span>
+									<template v-if="subItem.children.length > 0">
+										<span v-if="subItem.expanded" class="title-icon">-</span>
+										<span v-else="subItem.expanded" class="title-icon">+</span>
+									</template>
+								</div>
+								<ul class="sub-level" :class="{'active': subItem.expanded}">
+									<li v-for="(thirdItem, thirdIndex) in subItem.children" :key="thirdItem.title" class="title"
+										@click="goRoute(thirdItem)">
+										<span class="title-text">{{thirdItem.title}}</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</transition>
+		</div>
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+					menuExpand: false,
+					menuList: [
+						{
+							title: '首页',
+							level: 1,
+							index: 0,
+							expanded: false,
+							url: '/',
+							children: []
+						}, {
+							title: '产品中心',
+							level: 1,
+							index: 1,
+							expanded: false,
+							children: [
+								{
+									title: '人工智能产品',
+									level: 2,
+									index: 0,
+									expanded: false,
+									children: [
+										{
+											title: '人脸识别',
+											url: 'face.html'
+										}, {
+											title: '图像文字识别',
+											url: 'images.html'
+										}, {
+											title: '智能交互机器人',
+											url: 'robot.html'
+										}
+									]
+								}, {
+									title: '通用产品',
+									level: 2,
+									index: 1,
+									expanded: false,
+									children: [
+										{
+											title: '竞争情报分析系统',
+											url: 'infoanalysis.html'
+										}, {
+											title: 'OFD文档办公软件',
+											url: 'ofd.html'
+										}, {
+											title: 'DIU文档智能利用平台',
+											url: 'diu.html'
+										}, {
+											title: 'eSearch智能检索',
+											url: 'eSearch.html'
+										}
+									]
+								}
+							]
+						}, {
+							title: '解决方案',
+							level: 1,
+							index: 2,
+							expanded: false,
+							children: [
+								{
+									title: '大数据解决方案',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'bigdata.html',
+									children: []
+								}, {
+									title: '人工智能解决方案',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'ai.html',
+									children: []
+								}
+							]
+						}, {
+							title: '联合实验室',
+							level: 1,
+							index: 3,
+							expanded: false,
+							url: 'lab.html',
+							children: []
+						}, {
+							title: '新闻动态',
+							level: 1,
+							index: 4,
+							expanded: false,
+							url: '/4/index.html',
+							children: []
+						}, {
+							title: '关于我们',
+							level: 1,
+							index: 5,
+							expanded: false,
+							children: [
+								{
+									title: '公司介绍',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'aboutus.html',
+									children: []
+								}, {
+									title: '联系我们',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'contactus.html',
+									children: []
+								}, {
+									title: '加入我们',
+									level: 2,
+									index: 2,
+									expanded: false,
+									url: '/5/17/index.html',
+									children: []
+								}
+							]
+						}
+					]
+				},
+				methods: {
+					showMenu() {
+						this.menuExpand = !this.menuExpand
+						document.documentElement.style.overflow = 'hidden'
+						document.body.style.overflow = 'hidden'
+						document.body.style.position = 'fixed'
+					},
+					closeMenu() {
+						this.menuExpand = false
+						document.documentElement.style.overflow = 'auto'
+						document.body.style.overflow = 'auto'
+						document.body.style.position = 'static'
+					},
+					handleExpand(level, index, subIndex, item) {
+						if (level === 1 && item.children.length > 0) {
+							this.handleTopLevel(index, item)
+						} else if (level === 2 && item.children.length > 0) {
+							this.handleSubLevel(index, subIndex, item)
+						} else {
+							this.goRoute(item)
+						}
+					},
+					handleTopLevel(index, item) {
+						if (!item.expanded) {
+							this.foldTopLevel()
+						}
+						this.menuList[index].expanded = !this.menuList[index].expanded
+						this.$set(this.menuList, index, this.menuList[index])
+					},
+					handleSubLevel(index, subIndex, item) {
+						if (!item.expanded) {
+							this.foldSubLevel(index)
+						}
+						this.menuList[index].children[subIndex].expanded = !this.menuList[index].children[subIndex].expanded
+						this.$set(this.menuList[index], subIndex, this.menuList[index].children[subIndex])
+					},
+					goRoute(item) {
+						window.location.href = '{ms:global.url/}' + item.url
+					},
+					foldTopLevel() {
+						for (var m = 0; m < this.menuList.length; m++) {
+							this.menuList[m].expanded = false
+							for (var i = 0; i < this.menuList[m].children.length; i++) {
+								this.menuList[m].children[i].expanded = false
+								this.$set(this.menuList[m].children, i, this.menuList[m].children[i])
+							}
+							this.$set(this.menuList, m, this.menuList[m])
+						}
+					},
+					foldSubLevel(index) {
+						for (var n = 0; n < this.menuList[index].children.length; n++) {
+							this.menuList[index].children[n].expanded = false
+							this.$set(this.menuList[index].children, n, this.menuList[index].children[n])
+						}
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>

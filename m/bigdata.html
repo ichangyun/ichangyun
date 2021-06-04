@@ -1,0 +1,429 @@
+<!doctype html>
+<html style="font-size: 16px;">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>大数据解决方案</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="keywords" content="{ms:global.keyword/}" /> -->
+		<!-- <meta name="description" content="{ms:global.descrip/}" /> -->
+		<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./css/cy_style.css">
+		<script src="./js/device_adapter.js"></script>
+		<script src="./js/jquery-3.3.1.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<header class="home-header">
+				<div class="home-logo">
+					<a href="{ms:global.url/}" class="logo-box">
+						<img src="./image/home_logo_white.png" alt="" class="logo">
+					</a>
+					<span>人工智能·创造无限</span>
+				</div>
+				<span class="home-nav-menu" @click="showMenu()"></span>
+			</header>
+			<div class="info-main face-main bigdata-main">
+				<div class="banner"></div>
+				<div class="bigdata-background">
+					<h3 class="section-title">行业背景</h3>
+					<div class="description">
+						企事业单位内部各类型数据杂多，但缺乏有效的整合管理能力，且数据深入挖掘能力不足，导致资源的利用率低，无法满足飞速发展的业务需求。探索数据最大化整合利用的解决方案是新常态下产业升级的重要手段，通过提高数据的整合利用和实时处理能力，为企业提供实时、精准的信息和服务，从而有效提高生产效率，提升企业竞争力。
+					</div>
+				</div>
+				<div class="bigdata-introduction">
+					<div class="bigdata-bg"></div>
+					<div class="bigdata-wrapper">
+						<h3 class="section-title">方案概述</h3>
+						<div class="description">
+							基于大数据整合处理能力、数据建模分析能力、智能数据应用建设能力，凭借丰富的实践经验，畅云时讯为客户提供全面的解决方案，帮助客户实现海量多源异构数据的采集、整合，并运用动态知识图谱、自然语言处理、深度学习等技术，为客户提供相应的大数据解决方案。
+						</div>
+					</div>
+				</div>
+				<div class="bigdata-scene">
+					<h3 class="title">推荐场景</h3>
+					<div class="content-wrapper">
+						<div class="content-bg" style="background-image: url(./image/slt-bigdatapic02.png);">
+						</div>
+						<div class="content">
+							<h4>智库平台建设</h4>
+							<div class="description">
+								<p>
+									智库服务平台从数据规划、数据整合、数据存储、数据交换与共享、数据接口服务、综合信息整合与服务平台等角度进行咨询、设计和建设。结合现有业务系统，着眼未来业务系统扩展，进行业务流程与数据流程的统一规划与梳理，制定数据交换与共享的接口规范与准则，实现以综合数据共享为基础平台的多业务系统数据交换与共享流程，同时提供个性化的知识发现服务。提升工作人员信息与知识获取效率，减少无形信息资产的流失。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="content-bg" style="background-image: url(./image/slt-bigdatapic12.png);">
+						</div>
+						<div class="content-cover"></div>
+						<div class="content">
+							<h4>资源库建设</h4>
+							<div class="description">
+								<p>
+									单位内部资源的分散管理，缺乏有效的管理，无法对资源进行有效的组织、关联与利用。资源库由分布的、大规模和有组织的数据库组成，支持对各种格式信息资源的管理，涵盖数字化数据、信息和知识的整个生命周期的活动，包括生成、发布、传播、利用和保存，通过元数据揭示图书、文档、图片、音频、视频等电子资源之间的信息知识图谱，提高单位电子资源的利用率。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="content-bg" style="background-image: url(./image/slt-bigdatapic11.png);">
+						</div>
+						<div class="content-cover"></div>
+						<div class="content">
+							<h4>档案数字化</h4>
+							<div class="description">
+								<p>
+									用计算机技术、扫描技术、图像优化技术、OCR技术、数据库技术、流媒体技术、存储技术等高新技术把各种载体的档案资源转化为数字化的信息。从项目需求调研、加工标准制定都严格遵守国家档案局颁发的档案行业相关标准，严把质量关，设立多层次的质量保证体系，流水化闭环作业，每个流程工序紧密结合，包括采用多人处理，多人核对、质量抽检、固化校队等技术手段，保障数字化加工的成品达到更优。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="info-advantage ofd-advantage bigdata-advantage">
+					<h3 class="title">方案优势</h3>
+					<div class="content-wrapper">
+						<div class="content">
+							<h4>AI大数据结合</h4>
+							<h5>人工智能和大数据技术的完美结合</h5>
+							<h6>The perfect combination of artificial intelligence and big data technology</h6>
+							<p class="description">
+								采用人工智能技术，对多媒体资料、数据进行语义级的深入分析，充分理解其语义含义，并结合大数据分析技术，对多源异构的数据进行语义级关联分析，深入洞察隐藏的信息，实现信息的最大化利用。
+							</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="content">
+							<h4>数据拉通整合</h4>
+							<h5>业内领先的大数据拉通整合能力</h5>
+							<h6>Industry-leading big data pull-through integration capabilities</h6>
+							<p class="description">
+								借助强大的大数据操作系统底层平台，可以实现多源异构数据的整合；采用自主开发的元数据仓库支撑平台，高效完成海量数据的归一化处理；支持搭建多种主题的数据集市，灵活支撑上层各种业务应用场景。
+							</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="content">
+							<h4>数据科学服务</h4>
+							<h5>优秀的数据科学服务能力</h5>
+							<h6>Excellent data science service capabilities</h6>
+							<p class="description">
+								通过多年来跨领域的数据挖掘技术实践，积累了众多跨行业的应用模型库，可为房地产行业大数据解决方案整体设计、应用场景规划、项目实施提供最为优秀的数据科学服务能力。
+							</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="content">
+							<h4>丰富场景实践</h4>
+							<h5>丰富的应用场景落地实践经验</h5>
+							<h6>Rich application scenarios, practical experience</h6>
+							<p class="description">
+								公司通过完成多个大数据项目整体规划、实施交付，积累了丰富的应用场景落地实践经验，为各企事业单位大数据项目提供专家顾问咨询、项目规划、项目交付、项目培训等服务，助力客户实现大数据转型和赋能。
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="bigdata-demo">
+					<h4 class="wrapper-title">典型案例</h4>
+					<div class="content-wrapper">
+						<div class="content-bg demo-01"></div>
+						<div class="content-cover">
+							<p class="demo-title">国家某研究院行业智库项目</p>
+							<p class="content-title">行业背景</p>
+							<div class="content-description">
+								项目的总体目标是围绕“一库一平台、一院一专网、一联两合作”的战略布局，致力于将规划院建设成为国家级新型行业大咨询、大规划机构及纺织专业智库。围绕规划院现有业务及未来智库的发展需要，建设行业规划咨询智库服务平台,为院内专家提供行业规划咨询的协同办公服务，一站式智库数据中心及数据平台服务，同时为行业用户、行业客户提供一站式纺织综合信息服务。
+							</div>
+						</div>
+					</div>
+					<div class="content-footer">
+						<h4 class="title">项目成果</h4>
+						<div class="content-text">
+							<p>
+								本项目基于主流虚拟化平台及应用工具支撑平台，形成“一中心、五大系统”，通过数据集成及治理提高数据资源整合的深度和广度，通过数据挖掘和分析，以多终端、多形式的应用展现，为纺织行业提供精准、全面的服务。
+							</p>
+							<ul>
+								<li>数据服务中心</li>
+								<li>数据智能分析系统</li>
+								<li>智库综合服务门户系统</li>
+								<li>智库项目及专家管理服务系统</li>
+								<li>智库成果管理服务系统</li>
+								<li>智库协作与共享管理服务系统</li>
+							</ul>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="content-bg demo-02"></div>
+						<div class="content-cover">
+							<p class="demo-title">某研究所医疗设备应用大数据服务平台</p>
+							<p class="content-title">行业背景</p>
+							<div class="content-description">
+								本项目的目标是通过搭建医疗设备数据收集平台，收集医疗设备设计、生产、销售、临床使用与维护等产业化与应用有关数据；建立数据模型，并从数据中挖掘对设计、生产、使用等有的价值信息，为企业提供技术服务与数据支撑；为医疗机构提供数据参考与技术服务，临床使用设备提供设备相关风险预防与决策；为政府部门推动医疗设备发展应用的政策制定提供决策依据。
+							</div>
+						</div>
+					</div>
+					<div class="content-footer">
+						<h4 class="title">项目成果</h4>
+						<div class="content-text">
+							<p>
+								从数据规划、数据采集、数据组织（清洗）、数据整合、数据存储、数据分析和利用、数据交换与共享、数据接口服务、综合信息整合与行业服务等角度进行规划、设计和建设，形成“一中心、五系统”：
+							</p>
+							<ul>
+								<li>大数据管理服务中心</li>
+								<li>大数据智能分析系统</li>
+								<li>信息综合服务门户系统</li>
+								<li>项目及专家管理服务系统</li>
+								<li>成果（知识）管理服务系统</li>
+								<li>协作与共享管理服务系统</li>
+							</ul>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="content-bg demo-03"></div>
+						<div class="content-cover">
+							<p class="demo-title">某科学院所资源库建设项目</p>
+							<p class="content-title">行业背景</p>
+							<div class="content-description">
+								本项目的目标是建设一个具有分布收集，统一处理能力的数字系统。支持全院各单位随时随地的录入各类形象资源，由某个部门统一进行资源入库审核，并集中展示。同时，对全院各单位的资源收集、录入情况进行一体化展示，方便院领导直观了解全院形象资源数字化建设工作的进展。各类形象资源经过分类、数字化处理后，可通过该系统完成从录入、编辑、审核到展示、评估、利用的全流程。
+							</div>
+						</div>
+					</div>
+					<div class="content-footer">
+						<h4 class="title">项目成果</h4>
+						<div class="content-text">
+							<p>
+								对院所数字资产（多媒体数据）和实物资产（模型、实物等）统一进行梳理组织，通过数据的录入、整合处理、关联分析，提供资源管理、检索、在线浏览及关联分析的服务。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="home-footer">
+	<p class="telephone">客服电话&nbsp;&nbsp;400-0808-939</p>
+	<p class="copyright">Copyright &copy; 畅云时讯 2019</p>
+</footer>
+			<transition enter-active-class="fade-in-active" leave-active-class="fade-out-active">
+				<div v-show="menuExpand" class="menu-bg" v-cloak @click.stop="closeMenu()"></div>
+			</transition>
+			<transition name="slide-in">
+				<ul v-show="menuExpand" class="menu-content" v-cloak>
+					<li v-for="(item, index) in menuList" :key="item.title" class="level">
+						<div class="title" :class="{'has-border': item.children.length > 0}"
+							@click="handleExpand(1, index, 0, item)">
+							<span v-cloak class="title-text">{{item.title}}</span>
+							<template v-if="item.children.length > 0">
+								<span v-if="item.expanded" class="title-icon">-</span>
+								<span v-else="item.expanded" class="title-icon">+</span>
+							</template>
+						</div>
+						<ul v-if="item.children.length > 0" class="sub-content" :class="{'active': item.expanded}">
+							<li v-for="(subItem, subIndex) in item.children" :key="subItem.title" class="level">
+								<div class="title" :class="{'has-border': subItem.children.length > 0}"
+									@click="handleExpand(2, index, subIndex, subItem)">
+									<span class="title-text">{{subItem.title}}</span>
+									<template v-if="subItem.children.length > 0">
+										<span v-if="subItem.expanded" class="title-icon">-</span>
+										<span v-else="subItem.expanded" class="title-icon">+</span>
+									</template>
+								</div>
+								<ul class="sub-level" :class="{'active': subItem.expanded}">
+									<li v-for="(thirdItem, thirdIndex) in subItem.children" :key="thirdItem.title" class="title"
+										@click="goRoute(thirdItem)">
+										<span class="title-text">{{thirdItem.title}}</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</transition>
+		</div>
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+					menuExpand: false,
+					menuList: [
+						{
+							title: '首页',
+							level: 1,
+							index: 0,
+							expanded: false,
+							url: '/',
+							children: []
+						}, {
+							title: '产品中心',
+							level: 1,
+							index: 1,
+							expanded: false,
+							children: [
+								{
+									title: '人工智能产品',
+									level: 2,
+									index: 0,
+									expanded: false,
+									children: [
+										{
+											title: '人脸识别',
+											url: 'face.html'
+										}, {
+											title: '图像文字识别',
+											url: 'images.html'
+										}, {
+											title: '智能交互机器人',
+											url: 'robot.html'
+										}
+									]
+								}, {
+									title: '通用产品',
+									level: 2,
+									index: 1,
+									expanded: false,
+									children: [
+										{
+											title: '竞争情报分析系统',
+											url: 'infoanalysis.html'
+										}, {
+											title: 'OFD文档办公软件',
+											url: 'ofd.html'
+										}, {
+											title: 'DIU文档智能利用平台',
+											url: 'diu.html'
+										}, {
+											title: 'eSearch智能检索',
+											url: 'eSearch.html'
+										}
+									]
+								}
+							]
+						}, {
+							title: '解决方案',
+							level: 1,
+							index: 2,
+							expanded: false,
+							children: [
+								{
+									title: '大数据解决方案',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'bigdata.html',
+									children: []
+								}, {
+									title: '人工智能解决方案',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'ai.html',
+									children: []
+								}
+							]
+						}, {
+							title: '联合实验室',
+							level: 1,
+							index: 3,
+							expanded: false,
+							url: 'lab.html',
+							children: []
+						}, {
+							title: '新闻动态',
+							level: 1,
+							index: 4,
+							expanded: false,
+							url: '/4/index.html',
+							children: []
+						}, {
+							title: '关于我们',
+							level: 1,
+							index: 5,
+							expanded: false,
+							children: [
+								{
+									title: '公司介绍',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'aboutus.html',
+									children: []
+								}, {
+									title: '联系我们',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'contactus.html',
+									children: []
+								}, {
+									title: '加入我们',
+									level: 2,
+									index: 2,
+									expanded: false,
+									url: 'joinus.html',
+									children: []
+								}
+							]
+						}
+					]
+				},
+				methods: {
+					showMenu() {
+						this.menuExpand = !this.menuExpand
+						document.documentElement.style.overflow = 'hidden'
+						document.body.style.overflow = 'hidden'
+						document.body.style.position = 'fixed'
+					},
+					closeMenu() {
+						this.menuExpand = false
+						document.documentElement.style.overflow = 'auto'
+						document.body.style.overflow = 'auto'
+						document.body.style.position = 'static'
+					},
+					handleExpand(level, index, subIndex, item) {
+						if (level === 1 && item.children.length > 0) {
+							this.handleTopLevel(index, item)
+						} else if (level === 2 && item.children.length > 0) {
+							this.handleSubLevel(index, subIndex, item)
+						} else {
+							this.goRoute(item)
+						}
+					},
+					handleTopLevel(index, item) {
+						if (!item.expanded) {
+							this.foldTopLevel()
+						}
+						this.menuList[index].expanded = !this.menuList[index].expanded
+						this.$set(this.menuList, index, this.menuList[index])
+					},
+					handleSubLevel(index, subIndex, item) {
+						if (!item.expanded) {
+							this.foldSubLevel(index)
+						}
+						this.menuList[index].children[subIndex].expanded = !this.menuList[index].children[subIndex].expanded
+						this.$set(this.menuList[index], subIndex, this.menuList[index].children[subIndex])
+					},
+					goRoute(item) {
+						window.location.href = '{ms:global.url/}' + item.url
+					},
+					foldTopLevel() {
+						for (var m = 0; m < this.menuList.length; m++) {
+							this.menuList[m].expanded = false
+							for (var i = 0; i < this.menuList[m].children.length; i++) {
+								this.menuList[m].children[i].expanded = false
+								this.$set(this.menuList[m].children, i, this.menuList[m].children[i])
+							}
+							this.$set(this.menuList, m, this.menuList[m])
+						}
+					},
+					foldSubLevel(index) {
+						for (var n = 0; n < this.menuList[index].children.length; n++) {
+							this.menuList[index].children[n].expanded = false
+							this.$set(this.menuList[index].children, n, this.menuList[index].children[n])
+						}
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,378 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>人工智能产品平台-人脸识别</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="keywords" content="{ms:global.keyword/}" /> -->
+		<!-- <meta name="description" content="{ms:global.descrip/}" /> -->
+		<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./css/cy_style.css">
+		<script src="./js/device_adapter.js"></script>
+		<script src="./js/jquery-3.3.1.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<header class="home-header">
+				<div class="home-logo">
+					<a href="{ms:global.url/}" class="logo-box">
+						<img src="./image/home_logo_white.png" alt="" class="logo">
+					</a>
+					<span>人工智能·创造无限</span>
+				</div>
+				<span class="home-nav-menu" @click="showMenu()"></span>
+			</header>
+			<div class="face-main">
+				<div class="banner"></div>
+				<div class="ai-common-banner">
+					<p class="banner-title">人脸识别</p>
+					<p class="banner-description">通过软硬一体的系统集成和静态、动态人脸识别技术，建立以人为中心的感知体系，实现不同商业场景中的人机互联和感知融合。</p>
+				</div>
+				<div class="face-product">
+					<h3 class="title">产品功能</h3>
+					<div class="content-wrapper">
+						<div class="img-bg"></div>
+						<div class="content-info">
+							<p class="content-title">人脸对比</p>
+							<p class="description">对比两张人脸的相似度并返回相似度分值</p>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="img-bg right-bg"></div>
+						<div class="content-info">
+							<p class="content-title">人脸检索</p>
+							<p class="description">在一个指定人脸库中寻找相似人脸</p>
+						</div>
+					</div>
+				</div>
+				<div class="face-scene">
+					<h3 class="title">推荐场景</h3>
+					<div class="content-wrapper">
+						<div class="content-bg" style="background-image: url(./image/procen-recsce01.png);">
+						</div>
+						<div class="content-cover"></div>
+						<div class="content">
+							<h4>【楼宇园区】</h4>
+							<div class="description">
+								<p>面向商业地产、企业楼宇园区等应用场景推出可定制化方案，帮助企业用户提高管理效率、降低人力成本，一套基于人脸识别技术数据融汇共享的综合性管理平台。</p>
+								<ul>
+									<li>人员通行权限分级控制</li>
+									<li>智能化迎宾系统</li>
+									<li>访客预约、管理、权限控制</li>
+									<li>动态非配合式人员考勤</li>
+									<li>区域内部陌生人布控报警</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="content-bg" style="background-image: url(./image/procen-recsce02.png);">
+						</div>
+						<div class="content-cover"></div>
+						<div class="content">
+							<h4>【教育管理】</h4>
+							<div class="description">
+								<p>通过将静态、动态人脸识别技术深度融合入教学、科研、管理和校园生活等教育全过程，推动改进教学、优化管理、提升效率。组件化设计，可实现与教务、一卡通、安保、视频监控等应用系统的集成。</p>
+								<ul>
+									<li>校园安全监控、智能门禁、刷脸考勤</li>
+									<li>AR教学、学生表情分析</li>
+									<li>学生考证身份验证</li>
+									<li>校园刷脸支付</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="content-bg" style="background-image: url(./image/procen-recsce03.png);">
+						</div>
+						<div class="content-cover"></div>
+						<div class="content">
+							<h4>【生活社区】</h4>
+							<div class="description">
+								<p>智慧生活社区方案能够帮助物业部门对社区出入人员进行实时有效的监控与管理，最大限度提升管理部门的日常管理效率。</p>
+								<ul>
+									<li>社区大门、单元门通行管理及楼宇呼叫系统</li>
+									<li>陌生人、重点人员识别报警</li>
+									<li>访客登记、管理、授权</li>
+									<li>社区人员出入数据统计</li>
+									<li>社区车辆管理</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="content-bg" style="background-image: url(./image/procen-recsce04.png);">
+						</div>
+						<div class="content-cover"></div>
+						<div class="content">
+							<h4>【硬件集成】</h4>
+							<div class="description">
+								<p>实现多场景下的人脸识别，如可视对讲设备、门禁/考勤设备、服务/安防机器人、智能家居产品、智能广告机、智能储物柜、刷脸结算设备等。</p>
+								<ul>
+									<li>离线识别、支持不联网检测</li>
+									<li>功能强大，包含1：1、1：N识别以及静默活体功能</li>
+									<li>大底库、高精度、超快速、稳定性高</li>
+									<li>算法部署灵活，支持安卓硬件及Linux服务器的多种部署方式</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="face-type">
+					<h4>服务类型</h4>
+					<div class="content-wrapper">
+						<div class="img-box" style="background-image: url(./image/interface03.png);">
+						</div>
+						<p class="title">在线接口</p>
+						<p class="description">
+							通过在线接口输入两张人脸图片，计算两张人脸的相似度，从而判断是否同一个人，并给出相似度评分。
+						</p>
+					</div>
+					<div class="content-wrapper">
+						<div class="img-box" style="background-image: url(./image/recog03.png);">
+						</div>
+						<p class="title">离线识别SDK</p>
+						<p class="description">
+							集成到单台硬件设备中，如闸机、门禁、人证核验一体机等，无线网、弱网环境下实现人脸对比的能力。
+						</p>
+					</div>
+					<div class="content-wrapper">
+						<div class="img-box" style="background-image: url(./image/deploy03.png);">
+						</div>
+						<p class="title">私有化部署</p>
+						<p class="description">
+							部署至客户本地服务器，实现人脸对比能力，适用于安全级别较高的内网环境，支持分布式高并发业务员处理。提供一体机和软件部署包两种私有化方案。
+						</p>
+					</div>
+				</div>
+			</div>
+			<footer class="home-footer">
+	<p class="telephone">客服电话&nbsp;&nbsp;400-0808-939</p>
+	<p class="copyright">Copyright &copy; 畅云时讯 2019</p>
+</footer>
+			<transition enter-active-class="fade-in-active" leave-active-class="fade-out-active">
+				<div v-show="menuExpand" class="menu-bg" v-cloak @click.stop="closeMenu()"></div>
+			</transition>
+			<transition name="slide-in">
+				<ul v-show="menuExpand" class="menu-content" v-cloak>
+					<li v-for="(item, index) in menuList" :key="item.title" class="level">
+						<div class="title" :class="{'has-border': item.children.length > 0}"
+							@click="handleExpand(1, index, 0, item)">
+							<span v-cloak class="title-text">{{item.title}}</span>
+							<template v-if="item.children.length > 0">
+								<span v-if="item.expanded" class="title-icon">-</span>
+								<span v-else="item.expanded" class="title-icon">+</span>
+							</template>
+						</div>
+						<ul v-if="item.children.length > 0" class="sub-content" :class="{'active': item.expanded}">
+							<li v-for="(subItem, subIndex) in item.children" :key="subItem.title" class="level">
+								<div class="title" :class="{'has-border': subItem.children.length > 0}"
+									@click="handleExpand(2, index, subIndex, subItem)">
+									<span class="title-text">{{subItem.title}}</span>
+									<template v-if="subItem.children.length > 0">
+										<span v-if="subItem.expanded" class="title-icon">-</span>
+										<span v-else="subItem.expanded" class="title-icon">+</span>
+									</template>
+								</div>
+								<ul class="sub-level" :class="{'active': subItem.expanded}">
+									<li v-for="(thirdItem, thirdIndex) in subItem.children" :key="thirdItem.title" class="title"
+										@click="goRoute(thirdItem)">
+										<span class="title-text">{{thirdItem.title}}</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</transition>
+		</div>
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+					menuExpand: false,
+					menuList: [
+						{
+							title: '首页',
+							level: 1,
+							index: 0,
+							expanded: false,
+							url: '/',
+							children: []
+						}, {
+							title: '产品中心',
+							level: 1,
+							index: 1,
+							expanded: false,
+							children: [
+								{
+									title: '人工智能产品',
+									level: 2,
+									index: 0,
+									expanded: false,
+									children: [
+										{
+											title: '人脸识别',
+											url: 'face.html'
+										}, {
+											title: '图像文字识别',
+											url: 'images.html'
+										}, {
+											title: '智能交互机器人',
+											url: 'robot.html'
+										}
+									]
+								}, {
+									title: '通用产品',
+									level: 2,
+									index: 1,
+									expanded: false,
+									children: [
+										{
+											title: '竞争情报分析系统',
+											url: 'infoanalysis.html'
+										}, {
+											title: 'OFD文档办公软件',
+											url: 'ofd.html'
+										}, {
+											title: 'DIU文档智能利用平台',
+											url: 'diu.html'
+										}, {
+											title: 'eSearch智能检索',
+											url: 'eSearch.html'
+										}
+									]
+								}
+							]
+						}, {
+							title: '解决方案',
+							level: 1,
+							index: 2,
+							expanded: false,
+							children: [
+								{
+									title: '大数据解决方案',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'bigdata.html',
+									children: []
+								}, {
+									title: '人工智能解决方案',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'ai.html',
+									children: []
+								}
+							]
+						}, {
+							title: '联合实验室',
+							level: 1,
+							index: 3,
+							expanded: false,
+							url: 'lab.html',
+							children: []
+						}, {
+							title: '新闻动态',
+							level: 1,
+							index: 4,
+							expanded: false,
+							url: '/4/index.html',
+							children: []
+						}, {
+							title: '关于我们',
+							level: 1,
+							index: 5,
+							expanded: false,
+							children: [
+								{
+									title: '公司介绍',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'aboutus.html',
+									children: []
+								}, {
+									title: '联系我们',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'contactus.html',
+									children: []
+								}, {
+									title: '加入我们',
+									level: 2,
+									index: 2,
+									expanded: false,
+									url: 'joinus.html',
+									children: []
+								}
+							]
+						}
+					]
+				},
+				methods: {
+					showMenu() {
+						this.menuExpand = !this.menuExpand
+						document.documentElement.style.overflow = 'hidden'
+						document.body.style.overflow = 'hidden'
+						document.body.style.position = 'fixed'
+					},
+					closeMenu() {
+						this.menuExpand = false
+						document.documentElement.style.overflow = 'auto'
+						document.body.style.overflow = 'auto'
+						document.body.style.position = 'static'
+					},
+					handleExpand(level, index, subIndex, item) {
+						if (level === 1 && item.children.length > 0) {
+							this.handleTopLevel(index, item)
+						} else if (level === 2 && item.children.length > 0) {
+							this.handleSubLevel(index, subIndex, item)
+						} else {
+							this.goRoute(item)
+						}
+					},
+					handleTopLevel(index, item) {
+						if (!item.expanded) {
+							this.foldTopLevel()
+						}
+						this.menuList[index].expanded = !this.menuList[index].expanded
+						this.$set(this.menuList, index, this.menuList[index])
+					},
+					handleSubLevel(index, subIndex, item) {
+						if (!item.expanded) {
+							this.foldSubLevel(index)
+						}
+						this.menuList[index].children[subIndex].expanded = !this.menuList[index].children[subIndex].expanded
+						this.$set(this.menuList[index], subIndex, this.menuList[index].children[subIndex])
+					},
+					goRoute(item) {
+						window.location.href = '{ms:global.url/}' + item.url
+					},
+					foldTopLevel() {
+						for (var m = 0; m < this.menuList.length; m++) {
+							this.menuList[m].expanded = false
+							for (var i = 0; i < this.menuList[m].children.length; i++) {
+								this.menuList[m].children[i].expanded = false
+								this.$set(this.menuList[m].children, i, this.menuList[m].children[i])
+							}
+							this.$set(this.menuList, m, this.menuList[m])
+						}
+					},
+					foldSubLevel(index) {
+						for (var n = 0; n < this.menuList[index].children.length; n++) {
+							this.menuList[index].children[n].expanded = false
+							this.$set(this.menuList[index].children, n, this.menuList[index].children[n])
+						}
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>

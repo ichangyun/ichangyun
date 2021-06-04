@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>联合实验室</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="keywords" content="{ms:global.keyword/}" /> -->
+		<!-- <meta name="description" content="{ms:global.descrip/}" /> -->
+		<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./css/cy_style.css">
+		<script src="./js/device_adapter.js"></script>
+		<script src="./js/jquery-3.3.1.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<header class="home-header">
+				<div class="home-logo">
+					<a href="index.html" class="logo-box">
+						<img src="./image/home_logo_white.png" alt="" class="logo">
+					</a>
+					<span>人工智能·创造无限</span>
+				</div>
+				<span class="home-nav-menu" @click="showMenu()"></span>
+			</header>
+			<div class="info-main lab-main">
+				<div class="banner"></div>
+				<div class="lab-introduction">
+					{ms:arclist size=1 typeid=23}
+					<div class="lab-bg" style="background-image: url([field.litpic/]);"></div>
+					<div class="content-wrapper">
+						<h4>[field.title/]</h4>
+						<p>[field.descrip/]</p>
+					</div>
+					{/ms:arclist}
+				</div>
+				<div class="lab-info">
+					<h4>武汉大学信息检索与知识挖掘研究所</h4>
+					<p>
+						武汉大学信息检索与知识挖掘研究所是武汉大学武汉大学校级研究中心。该所依托武汉大学70后“信息检索方法与技术”学者学术团队，聚焦信息检索与自动问答、知识图谱与可视化、竞争情报方法与技术、大数据分析挖掘与应用等。先后主持和承担过国家社科基金重大项目、教育部人文社科基地重大项目、863项目、科技支撑计划、国家自科基金、国家社科基金等各类项目近50余项，发表高水平论文百余篇，开发有大数据环境下互联网、移动信息自动采集平台WHU-REAPER、网络舆情信息跟踪与挖掘平台WHU-POMS、智能问答机器人平台WHU-ROBOT、科技文献智能处理平台SCIENCE-AI等十余个工具平台。<a
+							href="http://47.96.153.156/intro?nsukey=YyZflxtwn%2B%2BF2APWcXtLAo%2F%2FpWFrCwe1HivK1ObqqsrYvzmOQm0su8EG62nx6aDnvDHXYdKVy27%2F6k7PUpK6duVmJPX0I0NZJGiLXsxxIdubNastkBHdIbBIAIlmlNVkVGx3iT3MTYkbpvsz8z52nO7Qg4xjLruoHRfZZNC09K3X6LHrCQMem5%2FXfDxOyqXI2sDIVB5XcQ6qSi1b4GBbtw%3D%3D"
+							target="_blank">>>了解更多</a>
+					</p>
+				</div>
+				<div class="lab-teacher">
+					<div class="title-wrapper">
+						<span class="title">师资力量</span>
+						<a class="lab-more"
+							href="http://47.96.153.156/member?nsukey=tcy0RDa%2FwFWr9HQXy3uKHH9V4gRr8ev9VqrnRFnA7HJbv%2FBPDuNlxyBRk3p7a79QvFmnZJ%2BAZRIN%2FgwOuwrn9UejDmbNYe8y7TwYpIpOcPY4CvF1SM7q2CQuWHyxTs%2BBASL19yqflZqdnu1pwdRpFV04yX0gzsZckkvh69c49NT7yHUwLfoFQmK2WnzSb1%2FoMdMHAQEDyV3CuIqoXkmzlQ%3D%3D"
+							target="_blank">查看更多></a>
+					</div>
+					<div class="content-wrapper">
+						<img src="./image/lab-pic02.png" alt="" class="lab-img">
+						<div class="content">
+							<div class="name-wrapper">
+								<span class="name">陆伟</span>
+								<span class="role">教授</span>
+							</div>
+							<div class="description">
+								信息检索与可视化、大数据智能、AI人机协同、竞争情报方法与技术
+							</div>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<img src="./image/lab-pic03.png" alt="" class="lab-img">
+						<div class="content">
+							<div class="name-wrapper">
+								<span class="name">王晓光</span>
+								<span class="role">教授</span>
+							</div>
+							<div class="description">
+								数字出版与数字资产管理、信息组织与语义建模、知识网络分析与设计、数字人文
+							</div>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<img src="./image/lab-pic04.png" alt="" class="lab-img">
+						<div class="content">
+							<div class="name-wrapper">
+								<span class="name">吴丹</span>
+								<span class="role">教授</span>
+							</div>
+							<div class="description">
+								信息检索与可视化、大数据智能、AI人机协同、竞争情报方法与技术
+							</div>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<img src="./image/lab-pic05.png" alt="" class="lab-img">
+						<div class="content">
+							<div class="name-wrapper">
+								<span class="name">程齐凯</span>
+								<span class="role">教授</span>
+							</div>
+							<div class="description">
+								文本挖掘、信息检索
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lab-photo">
+					<h4>照片墙</h4>
+					<div class="content-wrapper">
+						{ms:arclist size=20 typeid=24}
+						<div class="img-box">
+							<div class="img-bg" style="background-image: url([field.litpic/]);"></div>
+						</div>
+						{/ms:arclist}
+					</div>
+				</div>
+			</div>
+			<footer class="home-footer">
+	<p class="telephone">客服电话&nbsp;&nbsp;400-0808-939</p>
+	<p class="copyright">Copyright &copy; 畅云时讯 2019</p>
+</footer>
+			<transition enter-active-class="fade-in-active" leave-active-class="fade-out-active">
+				<div v-show="menuExpand" class="menu-bg" v-cloak @click.stop="closeMenu()"></div>
+			</transition>
+			<transition name="slide-in">
+				<ul v-show="menuExpand" class="menu-content" v-cloak>
+					<li v-for="(item, index) in menuList" :key="item.title" class="level">
+						<div class="title" :class="{'has-border': item.children.length > 0}"
+							@click="handleExpand(1, index, 0, item)">
+							<span v-cloak class="title-text">{{item.title}}</span>
+							<template v-if="item.children.length > 0">
+								<span v-if="item.expanded" class="title-icon">-</span>
+								<span v-else="item.expanded" class="title-icon">+</span>
+							</template>
+						</div>
+						<ul v-if="item.children.length > 0" class="sub-content" :class="{'active': item.expanded}">
+							<li v-for="(subItem, subIndex) in item.children" :key="subItem.title" class="level">
+								<div class="title" :class="{'has-border': subItem.children.length > 0}"
+									@click="handleExpand(2, index, subIndex, subItem)">
+									<span class="title-text">{{subItem.title}}</span>
+									<template v-if="subItem.children.length > 0">
+										<span v-if="subItem.expanded" class="title-icon">-</span>
+										<span v-else="subItem.expanded" class="title-icon">+</span>
+									</template>
+								</div>
+								<ul class="sub-level" :class="{'active': subItem.expanded}">
+									<li v-for="(thirdItem, thirdIndex) in subItem.children" :key="thirdItem.title" class="title"
+										@click="goRoute(thirdItem)">
+										<span class="title-text">{{thirdItem.title}}</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</transition>
+		</div>
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+					menuExpand: false,
+					menuList: [
+						{
+							title: '首页',
+							level: 1,
+							index: 0,
+							expanded: false,
+							url: '/',
+							children: []
+						}, {
+							title: '产品中心',
+							level: 1,
+							index: 1,
+							expanded: false,
+							children: [
+								{
+									title: '人工智能产品',
+									level: 2,
+									index: 0,
+									expanded: false,
+									children: [
+										{
+											title: '人脸识别',
+											url: 'face.html'
+										}, {
+											title: '图像文字识别',
+											url: 'images.html'
+										}, {
+											title: '智能交互机器人',
+											url: 'robot.html'
+										}
+									]
+								}, {
+									title: '通用产品',
+									level: 2,
+									index: 1,
+									expanded: false,
+									children: [
+										{
+											title: '竞争情报分析系统',
+											url: 'infoanalysis.html'
+										}, {
+											title: 'OFD文档办公软件',
+											url: 'ofd.html'
+										}, {
+											title: 'DIU文档智能利用平台',
+											url: 'diu.html'
+										}, {
+											title: 'eSearch智能检索',
+											url: 'eSearch.html'
+										}
+									]
+								}
+							]
+						}, {
+							title: '解决方案',
+							level: 1,
+							index: 2,
+							expanded: false,
+							children: [
+								{
+									title: '大数据解决方案',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'bigdata.html',
+									children: []
+								}, {
+									title: '人工智能解决方案',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'ai.html',
+									children: []
+								}
+							]
+						}, {
+							title: '联合实验室',
+							level: 1,
+							index: 3,
+							expanded: false,
+							url: 'lab.html',
+							children: []
+						}, {
+							title: '新闻动态',
+							level: 1,
+							index: 4,
+							expanded: false,
+							url: '/4/index.html',
+							children: []
+						}, {
+							title: '关于我们',
+							level: 1,
+							index: 5,
+							expanded: false,
+							children: [
+								{
+									title: '公司介绍',
+									level: 2,
+									index: 0,
+									expanded: false,
+									url: 'aboutus.html',
+									children: []
+								}, {
+									title: '联系我们',
+									level: 2,
+									index: 1,
+									expanded: false,
+									url: 'contactus.html',
+									children: []
+								}, {
+									title: '加入我们',
+									level: 2,
+									index: 2,
+									expanded: false,
+									url: 'joinus.html',
+									children: []
+								}
+							]
+						}
+					]
+				},
+				methods: {
+					showMenu() {
+						this.menuExpand = !this.menuExpand
+						document.documentElement.style.overflow = 'hidden'
+						document.body.style.overflow = 'hidden'
+						document.body.style.position = 'fixed'
+					},
+					closeMenu() {
+						this.menuExpand = false
+						document.documentElement.style.overflow = 'auto'
+						document.body.style.overflow = 'auto'
+						document.body.style.position = 'static'
+					},
+					handleExpand(level, index, subIndex, item) {
+						if (level === 1 && item.children.length > 0) {
+							this.handleTopLevel(index, item)
+						} else if (level === 2 && item.children.length > 0) {
+							this.handleSubLevel(index, subIndex, item)
+						} else {
+							this.goRoute(item)
+						}
+					},
+					handleTopLevel(index, item) {
+						if (!item.expanded) {
+							this.foldTopLevel()
+						}
+						this.menuList[index].expanded = !this.menuList[index].expanded
+						this.$set(this.menuList, index, this.menuList[index])
+					},
+					handleSubLevel(index, subIndex, item) {
+						if (!item.expanded) {
+							this.foldSubLevel(index)
+						}
+						this.menuList[index].children[subIndex].expanded = !this.menuList[index].children[subIndex].expanded
+						this.$set(this.menuList[index], subIndex, this.menuList[index].children[subIndex])
+					},
+					goRoute(item) {
+						window.location.href = '{ms:global.url/}' + item.url
+					},
+					foldTopLevel() {
+						for (var m = 0; m < this.menuList.length; m++) {
+							this.menuList[m].expanded = false
+							for (var i = 0; i < this.menuList[m].children.length; i++) {
+								this.menuList[m].children[i].expanded = false
+								this.$set(this.menuList[m].children, i, this.menuList[m].children[i])
+							}
+							this.$set(this.menuList, m, this.menuList[m])
+						}
+					},
+					foldSubLevel(index) {
+						for (var n = 0; n < this.menuList[index].children.length; n++) {
+							this.menuList[index].children[n].expanded = false
+							this.$set(this.menuList[index].children, n, this.menuList[index].children[n])
+						}
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>
